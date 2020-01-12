@@ -1,3 +1,5 @@
+// GIPHY API key: zw1vDrg6mOwSyq57NtJLipsWNbp0vpGG
+
 //I need a function that will generate buttons from an array.
 buttonGenerate = item => {
     // first I need to select the button element in jquery
