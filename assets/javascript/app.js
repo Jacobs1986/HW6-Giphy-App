@@ -50,7 +50,10 @@ $("button").on("click", function () {
                 // add the title to a new paragraph and append to sportCard
                 sportCard.append(title);
                 // add the rating to a new paragraph and append to sportCard
-                sportCard.append(rating);                
+                sportCard.append(rating);
+                // get the image link
+                let gifURL = array.images.fixed_height.url;
+                console.log(gifURL);                
                 // prepend sportCard to the #gif-area
                 $("#gif-area").prepend(sportCard);
             })
