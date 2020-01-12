@@ -1,5 +1,5 @@
 //I need a function that will generate buttons from an array.
-function buttonGenerate(item) {
+buttonGenerate = item => {
     // first I need to select the button element in jquery
     button = $("<button>");
     // Inside the loop an attr of data-* will need to be made so that each button can be distinguished from the other
