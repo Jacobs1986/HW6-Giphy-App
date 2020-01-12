@@ -38,13 +38,19 @@ $("button").on("click", function () {
             results.forEach(array => {
                 // I need to create a div for each GIF, I'll call it sportCard
                 let sportCard = $("<div>");
-                // Variable for creating a paragraph inside the card
-                let p = $("<p>");
                 // Inside the array I need to grab a title, rating and the gif itself
                 // Get the title
                 let title = array.title;
+                // create a new paragraph with the title as the text
+                title = $("<p>").text(title);
+                // Get the rating
+                let rating = array.rating;
+                // create a new paragraph with the rating as the text
+                rating = $("<p>").text(`Rating: ${rating}`);
                 // add the title to a new paragraph and append to sportCard
-                sportCard.append(p.text(title));                
+                sportCard.append(title);
+                // add the rating to a new paragraph and append to sportCard
+                sportCard.append(rating);                
                 // prepend sportCard to the #gif-area
                 $("#gif-area").prepend(sportCard);
             })
