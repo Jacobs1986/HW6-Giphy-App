@@ -5,7 +5,7 @@ buttonGenerate = item => {
     // first I need to select the button element in jquery
     button = $("<button>");
     // Inside the loop an attr of data-* will need to be made so that each button can be distinguished from the other
-    button.attr("data-sport", item).text(item);
+    button.addClass("sport").attr("data-sport", item).text(item);
     // The button then needs to appear in the #button-area div
     $("#button-area").append(button);
 }
@@ -16,7 +16,7 @@ let buttonArray = ["Basketball", "Baseball", "Football"];
 buttonArray.forEach(buttonGenerate);
 
 // Buttons to generate gifs for the sport
-$("button").on("click", function () {
+$(document).on("click", ".sport", function () {
     console.log(this);
     // create a variable for the sport selected using data-sport
     let sport = $(this).attr("data-sport");
@@ -81,6 +81,8 @@ $("#add-sport").on("click", function(event) {
 
     // clear the button area
     $("#button-area").empty();
+
+    $("#sport-input").val("");
 
     // regenerate the buttons using the new array
     buttonArray.forEach(buttonGenerate);
