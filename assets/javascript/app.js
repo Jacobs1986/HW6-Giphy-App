@@ -18,4 +18,7 @@ buttonArray.forEach(buttonGenerate);
 // Test for buttons
 $("button").on("click", function () {
     console.log(this);
+    // create a variable for the sport selected using data-sport
+    let sport = $(this).attr("data-sport");
+    console.log(sport);
 })
