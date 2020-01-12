@@ -31,6 +31,9 @@ $("button").on("click", function () {
         .then(function (response) {
             console.log(response);
 
+            // clear the div
+            $("#gif-area").empty();
+
             //create variable for the response.data
             let results = response.data;
 
@@ -53,7 +56,10 @@ $("button").on("click", function () {
                 sportCard.append(rating);
                 // get the image link
                 let gifURL = array.images.fixed_height.url;
-                console.log(gifURL);                
+                // create gif image that will be displayed
+                let gif = $("<img>").attr("src", gifURL);
+                // append to sportCard
+                sportCard.append(gif);                
                 // prepend sportCard to the #gif-area
                 $("#gif-area").prepend(sportCard);
             })
