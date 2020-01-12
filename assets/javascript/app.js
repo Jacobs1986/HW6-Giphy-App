@@ -12,3 +12,8 @@ buttonGenerate = item => {
 let buttonArray = ["Basketball", "Baseball", "Football"];
 
 buttonArray.forEach(buttonGenerate);
+
+// Test for buttons
+$("button").on("click", function () {
+    console.log(this);
+})
