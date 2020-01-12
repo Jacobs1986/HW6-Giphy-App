@@ -30,5 +30,15 @@ $("button").on("click", function () {
     })
         .then(function (response) {
             console.log(response);
+
+            //create variable for the response.data
+            let results = response.data;
+
+            // I need to grab information from the different arrays, I'll use forEach again
+            results.forEach(array => {
+                // I need to create a div for each GIF, I'll call it sportCard
+                // Inside the array I need to grab a title, rating and the gif itself
+                // Then it will need to be appended to the #gif-area div
+            })
         })
 })
