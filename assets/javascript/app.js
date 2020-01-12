@@ -15,7 +15,7 @@ let buttonArray = ["Basketball", "Baseball", "Football"];
 
 buttonArray.forEach(buttonGenerate);
 
-// Test for buttons
+// Buttons to generate gifs for the sport
 $("button").on("click", function () {
     console.log(this);
     // create a variable for the sport selected using data-sport
@@ -64,4 +64,24 @@ $("button").on("click", function () {
                 $("#gif-area").prepend(sportCard);
             })
         })
+})
+
+// Add a sport to the button list
+$("#add-sport").on("click", function(event) {
+    // stop the page from reloading
+    event.preventDefault();
+
+    // get the new sport from #sport-input
+    let newSport = $("#sport-input").val().trim();
+    console.log(newSport);
+
+    // push the newSport into the buttonArray
+    buttonArray.push(newSport);
+    console.log(buttonArray);
+
+    // clear the button area
+    $("#button-area").empty();
+
+    // regenerate the buttons using the new array
+    buttonArray.forEach(buttonGenerate);
 })
