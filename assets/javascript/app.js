@@ -21,4 +21,14 @@ $("button").on("click", function () {
     // create a variable for the sport selected using data-sport
     let sport = $(this).attr("data-sport");
     console.log(sport);
+    // create the queryURL using sport selected
+    let queryURL = `https://api.giphy.com/v1/gifs/search?q=${sport}&api_key=zw1vDrg6mOwSyq57NtJLipsWNbp0vpGG&limit=10`;
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+        .then(function (response) {
+            console.log(response);
+        })
 })
