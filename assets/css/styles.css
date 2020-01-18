@@ -1,0 +1,13 @@
+/*Border-1 class*/
+.border1 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+/*Border-2 class*/
+.border2 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
