@@ -12,6 +12,10 @@
     border-color: blue;
 }
 
+h1 {
+    text-align: center;
+}
+
 /*Styling for buttons with sport-class*/
 .sport {
     margin-right: 5px;
@@ -24,4 +28,10 @@
     float: left;
     margin-right: 4%;
     margin-bottom: 3%;
+}
+
+/*Styling for the gif-title class*/
+.gif-title {
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
