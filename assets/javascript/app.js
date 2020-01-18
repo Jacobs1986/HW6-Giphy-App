@@ -45,7 +45,7 @@ $(document).on("click", ".sport", function () {
                 // Get the title
                 let title = array.title;
                 // create a new paragraph with the title as the text
-                title = $("<p>").text(title);
+                title = $("<p>").text(title).addClass("gif-text");
                 // Get the rating
                 let rating = array.rating;
                 // create a new paragraph with the rating as the text

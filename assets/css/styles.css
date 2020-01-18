@@ -17,3 +17,11 @@
     margin-right: 5px;
     margin-bottom: 5px;
 }
+
+/*Styling for the card class*/
+.card {
+    width: 46%;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 3%;
+}
