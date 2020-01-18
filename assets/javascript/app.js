@@ -40,7 +40,7 @@ $(document).on("click", ".sport", function () {
             // I need to grab information from the different arrays, I'll use forEach again
             results.forEach(array => {
                 // I need to create a div for each GIF, I'll call it sportCard
-                let sportCard = $("<div>");
+                let sportCard = $("<div>").addClass("card");
                 // Inside the array I need to grab a title, rating and the gif itself
                 // Get the title
                 let title = array.title;

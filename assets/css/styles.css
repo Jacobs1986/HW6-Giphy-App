@@ -11,3 +11,9 @@
     border-width: 5px;
     border-color: blue;
 }
+
+/*Styling for buttons with sport-class*/
+.sport {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
